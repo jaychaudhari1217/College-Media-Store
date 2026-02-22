@@ -9,8 +9,8 @@ body {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 /* NAVBAR */
@@ -116,6 +116,13 @@ body {
 }
 
 
+
+.home,
+.page,
+.hero,
+.contact-page {
+  padding-top: 100px;
+}
 
 
 

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar({ search, setSearch }) {
 
+  const [menuOpen, setMenuOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
   const handleSearch = () => {
@@ -13,6 +15,9 @@ function Navbar({ search, setSearch }) {
   return (
     <nav className="navbar">
       <h2 className="logo">🎓 College Media Hub</h2>
+
+
+     
 
      <div className="search-container">
         <input
@@ -29,7 +34,13 @@ function Navbar({ search, setSearch }) {
       </div>
 
 
-      <ul className="nav-links">
+
+       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
+
+
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/books">Books</Link></li>
         <li><Link to="/hollywood">Hollywood</Link></li>
