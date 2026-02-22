@@ -1,0 +1,148 @@
+/* Navbar Container */
+/* .navbar {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.8s ease-in-out;
+  
+} */
+
+
+.navbar {
+  position: fixed;      /* 🔥 Important */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.8s ease-in-out;
+}
+
+
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  padding: 5px 14px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  
+  background-color: #ffcc00;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+  background-color: #ffaa00;
+}
+
+
+/* Logo */
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: glow 2s infinite alternate;
+  margin-right: 10px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* Link Styling */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Underline Animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #7928ca,
+    #00f2fe,
+    #ff0080
+  );
+  transition: 0.4s ease;
+  border-radius: 5px;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #ffcc00;
+  transform: translateY(-3px);
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Logo Glow */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ffcc00;
+  }
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 25px #ffcc00;
+  }
+}

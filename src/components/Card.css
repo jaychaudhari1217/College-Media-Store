@@ -1,0 +1,139 @@
+/* CARD */
+
+/* .card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  aspect-ratio: 1 / 1;   
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+ 
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card-content a:hover {
+  background: white;
+} */
+
+
+
+
+
+
+
+
+
+/* chatgpt */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🔥 4 cards in one row */
+  gap:25px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 6%;
+}
+
+
+.card {
+   /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  aspect-ratio: 1 / 2;   /* 🔥 Square */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image takes 50% */
+.card img {
+  width: 100%;
+  height: 50%;
+  
+}
+
+/* Content section */
+.card-content {
+  height: 50%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title */
+.card-content h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.card-content p {
+  font-size: 13px;
+  opacity: 0.8;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+/* Button */
+.card-content a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card-content a:hover {
+  background: white;
+}
