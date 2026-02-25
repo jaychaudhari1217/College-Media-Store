@@ -5,23 +5,25 @@
   color: #ffffff;
   padding: 50px 20px 20px;
   margin-top: 50px;
+  
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 50px;
 
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  /* margin: 0 auto;
+  padding: 0 20px; */
 }
 
 .footer-section {
-  flex: 1;
+  flex: ;
   min-width: 220px;
+  
 }
 
 .footer-section h2,
@@ -37,7 +39,8 @@
 
 .footer-section ul {
   list-style: none;
-  padding: 0;
+  padding-left: 5%;
+  
 }
 
 .footer-section ul li {
@@ -48,6 +51,15 @@
 
 .footer-section ul li:hover {
   color: #facc15;
+}
+
+.social-icons {
+  /* display: flex;
+  justify-content: flex-start; */
+  margin-left: -70px;
+  gap: 15px;
+  margin-top: 20px;
+  
 }
 
 .social-icons span {

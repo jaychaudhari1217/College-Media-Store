@@ -16,13 +16,26 @@ function Books({ search }) {
     }
   ];
 
+
+  const filteredBook= books.filter((item) =>
+    item.title.toLowerCase().includes(search.toLowerCase()) ||
+    item.desc.toLowerCase().includes(search.toLowerCase())
+  );
+
+
   return (
+   
+
     <div className="page">
       <h1>📚 College Book Store</h1>
       <div className="card-container">
-        {books.map((b, i) => (
-          <Card key={i} {...b} />
-        ))}
+        {filteredBook.length > 0 ? (
+      filteredBook.map((c, i) => (
+        <Card key={i} {...c} />
+      ))
+    ) : (
+      <p>No results found</p>
+    )}
       </div>
     </div>
   );

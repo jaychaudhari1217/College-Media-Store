@@ -12,16 +12,32 @@ function Hollywood({ search }) {
       title: "Interstellar",
       desc: "Sci-Fi Space Adventure",
       image: "https://via.placeholder.com/400x250"
+    },
+    {
+      title: "Interstellar",
+      desc: "Sci-Fi Space Adventure",
+      image: "https://via.placeholder.com/400x250"
     }
   ];
 
+  const filteredHollywood = movies.filter((item) =>
+    item.title.toLowerCase().includes(search.toLowerCase()) ||
+    item.desc.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
-    <div className="page">
+  
+
+     <div className="page">
       <h1>🎬 Hollywood Movies</h1>
       <div className="card-container">
-        {movies.map((m, i) => (
-          <Card key={i} {...m} />
-        ))}
+        {filteredHollywood.length > 0 ? (
+      filteredHollywood.map((c, i) => (
+        <Card key={i} {...c} />
+      ))
+    ) : (
+      <p>No results found</p>
+    )}
       </div>
     </div>
   );

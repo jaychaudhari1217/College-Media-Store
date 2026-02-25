@@ -9,6 +9,7 @@ body {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
   min-height: 100vh;
+  /* margin: 0; */
   display: flex;
   justify-content: center;
 }
@@ -139,6 +140,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  /* background: #fffd; */
 }
 
 .search-bar input {
@@ -148,7 +150,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(245, 243, 243, 0.1);
   backdrop-filter: blur(10px);
   color: white;
   border: 1px solid rgba(255,255,255,0.3);
